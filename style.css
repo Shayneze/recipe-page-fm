@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--dark-rose); }
+
+:root {
+  --beige: hsl(30, 54%, 90%);
+  --light-gray: hsl(30, 18%, 87%);
+  --gray: hsl(30, 10%, 34%);
+  --dark-gray: hsl(24, 5%, 18%);
+  --brown: hsl(14, 45%, 36%);
+  --dark-rose: hsl(332, 51%, 32%);
+  --light-rose: hsl(330, 100%, 98%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--beige);
+}
+
+.recipe-card {
+  background-color: white;
+  width: 35%;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 10vh 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+p, li {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+h1, h2 {
+  font-family: "Young Serif", serif;
+}
+
+h1 {
+  color: var(--dark-gray);
+}
+
+h2 {
+  color: var(--brown);
+}
+
+.prep-time-card {
+  background-color: var(--light-rose);
+  padding: 3px 20px;
+  border-radius: 10px;
+}
+
+.prep-time-card li::marker {
+  color: var(--dark-rose);
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 150%;
+  padding-left: 10px;
+}
+
+li::marker {
+  color: var(--brown);
+  font-weight: bold;
+}
+
+h3{
+  color: var(--dark-rose);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--light-gray);
+}
+/* Mise en forme du tableau */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Fusionner les bordures */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--light-gray); /* Applique une bordure entre les lignes */
+}
+
+td:nth-child(1) {
+ padding-left: 20px;
+ color: var(--gray);
+}
+
+td:nth-child(2) {
+  color: var(--brown); /* Texte marron dans la deuxième colonne */
+  font-weight: 600;
+}
+
+
+@media (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+  .recipe-card {
+    margin: 0;
+    width: 90%;
+  }
+  li {
+    font-size: 16px;
+  }
+}
